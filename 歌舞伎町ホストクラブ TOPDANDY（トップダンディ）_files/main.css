@@ -1,0 +1,321 @@
+
+■リセット
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;padding: 0;border: 0;vertical-align: baseline;font-family: inherit;font-style: inherit;font-weight: inherit;}
+
+html{height:100%;font-family:'Lucida Grande', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif;l/* ine-height: 0; */width: 100%;}
+img{width: 100%}
+
+.font_siz28{font-family:"リュウミン Pro L-KL";}
+
+/*FONT SIZE*/
+.font_siz24,.font_siz28,.font_siz40,.font_siz45,.SP_font_siz24,.SP_font_siz40,.PC_font_siz14,.PC_font_siz16,.PC_font_siz18,.PC_font_siz24,.PC_font_siz45{line-height:1.3;}
+
+/*FONT*/
+@font-face {
+  font-family: 'JuliusSansOne-Regular';
+  src: url('../font/JuliusSansOne-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Oswald-Medium';
+  src: url('../font/Oswald-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Oswald-ExtraLight';
+  src: url('../font/Oswald-ExtraLight.ttf') format('truetype');
+}
+.JuliusSansOneFont{font-family: 'JuliusSansOne-Regular';}
+.PlayfairDisplayFont{font-family: 'Playfair Display SC', serif;}
+.OswaldFont{font-family: 'Oswald-Medium', sans-serif;}
+.OswaldFontEL{font-family: 'Oswald-ExtraLight', sans-serif;}
+
+.rankno,.data_name{font-family: 'Playfair Display SC', serif;}
+
+/* a:hover{opacity: 0.6;} */
+
+/*------------
+BUTTON
+--------------*/
+/*ベース*/
+.button {display: inline-block;text-decoration: none;text-align: center;outline: none;}
+.button::before,.button::after {position: absolute;z-index: -1;display: block;content: '';}
+.button,.button::before,.button::after {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;-webkit-transition: all .3s;transition: all .3s;}
+/*追記*/
+.button {position: relative;z-index: 2;line-height: 50px;overflow: hidden;}
+.button::after {top: -100%;left: -100%;width: 100%;height: 100%;}
+.button:hover::after {top: 0;left: 0;}
+
+/*btn01*/
+.btn01 .button{background-color: #000;border: 2px solid #fff;color: #fff;}
+.btn01 .button:hover {color: #000;}
+.btn01 .button:hover::after {background-color: #fff;}
+.btn01 .btn_arrow::before{content: "";position: absolute;top: 50%;right: 10%;border-top: 2px solid #fff;border-right: 2px solid #fff;transform: rotate(45deg);}
+
+/*btn02*/
+.btn02 .button{background-color: #fff;border: 2px solid #000;color: #000;}
+.btn02 .button:hover {color: #fff;}
+.btn02 .button:hover::after {background-color: #000;}
+.btn02 .btn_arrow::before{content: "";position: absolute;top: 50%;right: 10%;border-top: 2px solid #000;border-right: 2px solid #000;transform: rotate(45deg);}
+
+/*btn03*/
+.btn03 .button{background-color: #fff;border: 2px solid #000;color: #000;}
+.btn03 .button:hover {color: #fff;border: 2px solid #fff;}
+.btn03 .button:hover::after {background-color: #000;}
+.btn03 .btn_arrow::before{content: "";position: absolute;top: 50%;right: 10%;border-top: 2px solid #B40000;border-right: 2px solid #B40000;transform: rotate(45deg);}
+
+
+.more_btn{text-align: center;}
+
+/*------------
+SECTION
+--------------*/
+.section h2 .color{color: #91733C;}
+
+
+/*----------------
+	CONCEPT
+----------------*/
+#concept{background: #000;color: #fff;}
+#concept h2{text-align: center;}
+#concept h2 span{border-bottom: #B40000 solid 2px;}
+.concept_text p{text-align: center;}
+
+
+
+/*----------------
+	INFO
+----------------*/
+#info_area a{text-decoration: none;color:#000;}
+#info_area .info_img:hover{opacity:0.6;}
+.bxslider-info li .info_data{text-align: right;}
+.bxslider-info li span{color: #B40000;float: left;}
+#info_area .bx-wrapper .bx-prev{background: url(../images/item01.png) no-repeat center center;}
+#info_area .bx-wrapper .bx-next{background: url(../images/item02.png) no-repeat center center;}
+
+
+/*----------------
+  TOP RANKING
+----------------*/
+#top_ranking{background: #000;color: #fff;}
+#top_ranking h2{text-align: left;}
+
+.rank_area .underline{border-bottom: #B40000 1px solid;}
+.photo_area{position: relative;overflow: hidden;}
+.photo_area .photo img{vertical-align: bottom;}
+.photo_area .photo img:hover{opacity:0.8;}
+.photo_area .personal_data{background: rgba(225,225,225,0.8);color: #000;}
+
+
+/*----------------
+  TOP GALLERY
+----------------*/
+#top_movie .bx-wrapper .bx-prev,#top_photo .bx-wrapper .bx-prev{background: url(../images/item01.png) no-repeat center center;}
+#top_movie .bx-wrapper .bx-next,#top_photo .bx-wrapper .bx-next{background: url(../images/item02.png) no-repeat center center;}
+
+#top_movie .bx-wrapper{margin: 0 auto;}
+#top_movie .bx-wrapper a{text-decoration: none;color: #000;}
+.gal_img:hover{opacity: 0.6;}
+
+/*youtube*/
+.youtube {position: relative;width: 100%;padding-top: 56.25%;}
+.youtube iframe {position: absolute;top: 0;right: 0;width: 100% !important;height: 100% !important;}
+
+/*gallery*/
+#top_photo .bx-wrapper a{text-decoration: none;color: #000;}
+
+/*----------------
+  TOP GPICK UP
+----------------*/
+.pickup_photo:hover{opacity:0.6;}
+
+
+/*----------------
+  TOP EVENT
+----------------*/
+#top_schedule{background: #000;color: #fff;}
+#top_schedule dl{width: 100%;}
+#top_schedule dt{background: #C8BEA0;float: left;color: #000;font-weight: 100;}
+#top_schedule dt span{font-weight:bold;}
+#top_schedule dd{background: #323232;float: right;}
+#top_schedule .bx-wrapper{background: none;}
+#top_schedule dd .event{color: #B40000;}
+
+#top_schedule .bx-wrapper .bx-prev{background: url(../images/item04.png) no-repeat center center;}
+#top_schedule .bx-wrapper .bx-next{background: url(../images/item05.png) no-repeat center center;}
+
+/*----------------
+	gd List
+----------------*/
+#gd_list{background: #000;}
+#gd_list .title_bg{background: #000;} 
+#gd_logo_logo{background:url(../images/gd_list_bg.jpg) no-repeat ;background-size: cover;}
+
+
+/*----------------
+	FOOTER
+----------------*/
+#footer_address_area .footer_address a{text-decoration: none;color: #fff;}
+
+
+
+/*------------------------------------------------------------------------------------------------
+	下層 共通
+------------------------------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------------------------
+	下層 RANKING
+------------------------------------------------------------------------------------------------*/
+#rankPage .photo a img:hover{opacity: 0.6;}
+
+/*------------------------------------------------------------------------------------------------
+	下層 STAFF
+------------------------------------------------------------------------------------------------*/
+#staff_list_area a{color: #000;}
+.staff_box{position: relative;overflow: hidden;text-align: left;}
+.staff_box:after {position: absolute;content: "";display: block;width: 100%;height: 100%;top: 0;-webkit-transition: all .3s ease-out;-moz-transition: all .3s ease-out;-ms-transition: all .3s ease-out;transition: all .3s ease-out;}
+.staff_box:hover:after {opacity: .8;-moz-transform: scale(1.2);-webkit-transform: scale(1.2);-ms-transform: scale(1.2);transform: scale(1.2);}
+.staff_box .inner {z-index: 1;position: relative;}
+.staff_box .staff_data .staff_post span{background: black;color: #fff;}
+.staff_box .staff_data .staff_name_box{background: rgba(255,255,255,0.8);}
+
+/*MOVIE*/
+#staffPage #btn_moreMovie{text-align: right;}
+
+/*PHOTO*/
+#btn_moreGallery{text-align: right;}
+
+/*------------------------------------------------------------------------------------------------
+	下層 STAFF DETAIL
+------------------------------------------------------------------------------------------------*/
+
+.name_area{text-align: right;}
+.detaile_name{background: #fff;}
+.name_area .detail_underline{border-bottom: #B40000 solid 2px;}
+#detail_middle_area #detail_sns{background:#fff}
+
+#detail_upper_area .red{color: #B40000;}
+
+
+/*PROFILE*/
+#detail_middle_area h3{color: #7F7F7F;}
+#detail_middle_area #detail_prof{color: #323232;}
+#detail_middle_area #detail_prof span{color: #968C00;font-weight: bold;}
+
+
+/*------------------------------------------------------------------------------------------------
+	下層 STAFF MOVIE
+------------------------------------------------------------------------------------------------*/
+#subtitle_color{color: #91733C;}
+
+#staffPage .remodal-bg{position: relative;}
+#staffPage #movie_area .movie_box a{color: #000;}
+/* #staffPage .gal_txt,#staffmoviePage .gal_txt{background:rgba(255,255,255,0.8);position: absolute;bottom:0;z-index: 10;} */
+#staffPage .gal_img img,#staffmoviePage .gal_img img{vertical-align: bottom;}
+
+
+
+/*------------------------------------------------------------------------------------------------
+	下層 MOVIE・STAFF MOVIE
+------------------------------------------------------------------------------------------------*/
+#staffPage .remodal-bg,#staffmoviePage .remodal-bg{position: relative;}
+#moviePage .slect_year p,#galleryPage .slect_year p,#galleryDetailPage .slect_year p,#archivePage .slect_year p{color: #B40000;}
+#moviePage .remodal-bg{position: relative;}
+#movie_area_wrapper a{color: #000;}
+#moviePage .gal_img img{vertical-align: bottom;}
+/* .movie_box .gal_txt{background:rgba(255,255,255,0.8);position: absolute;bottom:0;z-index: 10;} */
+
+select{outline:none;text-indent: 0.01px;text-overflow: '';background: none transparent;vertical-align: middle;font-size: inherit;color: inherit;-webkit-appearance: button;-moz-appearance: button;appearance: button;}
+/* select option{background-color: #fff;color: #333;} */
+select::-ms-expand {display: none;}
+select:-moz-focusring { color: transparent; }
+
+/*------------------------------------------------------------------------------------------------
+	下層 GALLERY
+------------------------------------------------------------------------------------------------*/
+#galleryPage .gallery_box{position: relative;}
+#galleryPage .gallery_box a{color: #333;}
+#galleryPage .gallery_box .gallery_box_title{font-weight: bold;}
+.gallery_text{background: rgba(255,255,255,0.8);display: block;}
+.nyroModalClose{color: #fff;padding-bottom: 10px;}
+
+#galleryPage .gallery_box{float: left;}
+#galleryPage .gallery_box .gallery_img{height: 100%;text-indent: -999999px;}
+#galleryPage .gallery_box:nth-child(odd){float: right;}
+#top_photo .bx-wrapper{margin: 0 auto;}
+
+/*Gallery Detail*/
+#galleryDetailPage #nyroModalTitle{display: none;}
+#galleryDetailPage  li.gal_det_box .gallery_det_text{color: #333;line-height: 1.6;word-break: break-all;}
+
+/*------------------------------------------------------------------------------------------------
+	下層 ARCHIVE
+------------------------------------------------------------------------------------------------*/
+#archivePage .archive_box{position: relative;}
+#archivePage .archive_box a{color: #000;}
+#archivePage .archive_box .archive_box_title{font-weight: bold;}
+/* .archive_text{background: rgba(255,255,255,0.8);position: absolute; bottom:0;} */
+.nyroModalClose{color: #fff;padding-bottom: 10px;}
+
+#archivePage .archive_box{float: left;overflow: hidden;}
+#archivePage .archive_box .archive_img{height: 100%;text-indent: -999999px;}
+#archivePage .archive_box:nth-child(odd){float: right;}
+
+
+
+/*------------------------------------------------------------------------------------------------
+	下層 SYSTEM
+------------------------------------------------------------------------------------------------*/
+#accessmap{background: #000;}
+#accessmap h2{color: #fff}
+#accessmap .subtitle{color: #fff}
+
+
+/*------------------------------------------------------------------------------------------------
+	下層 SCHEDULE
+------------------------------------------------------------------------------------------------*/
+#schedulePage #sch_swich{text-align: right;}
+#schedulePage.schduleNextPage #sch_swich{text-align: left;}
+#schedulePage #sch_swich a{color: #000;text-decoration: none;}
+
+#schedulePage .daybox{border: 1px solid #7F7F7F;}
+.offday{background: #E5E5E5;}
+.eventday{background: url(../images/sch_bg.png) no-repeat 80% 5% #91733C;border-color:#91733C;}
+.eventday a{text-decoration: none;color: #000;}
+.eventday a .sch_status{color: #fff;}
+.scheduleThisPage .thismonth_0,.scheduleThisPage .thismonth_2{opacity: 0.4;}
+.schduleNextPage .thismonth_1,.schduleNextPage .thismonth_3{opacity: 0.4}
+
+
+/*------------------------------------------------------------------------------------------------
+	下層 ABOUT
+------------------------------------------------------------------------------------------------*/
+/*HISTORY*/
+#history{background: #FCFCF8;}
+#history h3 span.border{background:url(../about/images/history_title_border.png) no-repeat bottom left; background-size:contain; }
+#history h3 span.color{color:#B40000;}
+
+
+/*------------
+ clearfix
+--------------*/
+.clearfix:after {  
+  content: ".";   
+  display: block;   
+  height: 0;   
+  clear: both;   
+  visibility: hidden;  
+}  
+  
+.clearfix { display: inline-table; }  
+  
+/* Hides from IE-mac \*/  
+* html .clearfix { height: 1%; }  
+.clearfix { display: block; }  
+/* End hide from IE-mac */ 
